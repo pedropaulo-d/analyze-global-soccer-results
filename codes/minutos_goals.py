@@ -45,7 +45,11 @@ fig = px.bar(df_goal_minute,
              labels={
                  'time_interval': 'Intervalo de Tempo (minutos)',
                  'proporcao_percentual': 'Proporção de Gols (%)'
-             })
+             },
+             text='proporcao_percentual'
+             )
+
+fig.update_traces(texttemplate='%{text:.2f}%', textposition='outside')
 
 # Exibindo o gráfico
 fig.show()
