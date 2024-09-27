@@ -4,14 +4,16 @@ import pandas as pd
 df_goal = pd.read_csv('../data/Goal_Scorers.csv', sep=',')
 df_goal
 # %%
+
 # Usando pd.cut para categorizar os minutos em faixas de tempo
 df_goal['time_interval'] = pd.cut(df_goal['minute'], 
-                             bins=[0, 15, 30, 45, 60, 75, 90, 105, 120, 135],  # Definindo os intervalos
-                             labels=['0-15', '16-30', '31-45', '46-60', '61-75', '76-90', '91-105', '106-120', '135+'],  # Nomeando os intervalos
-                             right=False)  # right=False significa que o limite superior é exclusivo
+                             bins=[0, 15, 30, 45, 60, 75, 90, 105, 120, 135], 
+                             labels=['0-15', '16-30', '31-45', '46-60', '61-75', '76-90', '91-105', '106-120', '135+'],
+                             right=False)
 
 df_goal
 # %%
+
 df_goal_minute = df_goal.groupby(['time_interval']).agg({
 
     'date': 'count',
