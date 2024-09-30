@@ -37,9 +37,9 @@ df_matches
 condicao = df_matches['tipo_torneio'] == 'Copa do Mundo'
 df_matches_copadomundo = df_matches[condicao]
 
-
+df_matches_copadomundo
 # %%
-df_qtd_win_times = df_matches[df_matches['time_ganhador'] != 'Empate'].groupby(['time_ganhador']).agg({
+df_qtd_win_times = df_matches_copadomundo[df_matches_copadomundo['time_ganhador'] != 'Empate'].groupby(['time_ganhador']).agg({
 
     'date': 'count',
 
@@ -47,6 +47,7 @@ df_qtd_win_times = df_matches[df_matches['time_ganhador'] != 'Empate'].groupby([
 
 df_qtd_win_times.sort_values(by='date', ascending=False, inplace=True)
 df_top10_times_win = df_qtd_win_times.head(10)
+df_top10_times_win
 # %%
 import plotly.express as px
 
@@ -64,3 +65,8 @@ fig = px.bar(
                     'date': 'N° de Vitórias'
                     })
 fig.show()
+# %%
+html_string = fig.to_html(full_html=True, include_plotlyjs='cdn')
+with open("10_times_mais_fortes", "w") as f:
+    f.write(html_string)
+# %%
