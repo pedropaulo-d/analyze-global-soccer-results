@@ -1,44 +1,51 @@
-# Análise de Resultados do Futebol Global (1872-2024)
+# Análise de Dados de Futebol em Torneios da FIFA
 
-Este repositório contém análises exploratórias e insights sobre o dataset histórico de partidas de futebol internacional, abrangendo jogos entre seleções nacionais de 1872 até 2024. O objetivo deste projeto é aplicar técnicas de análise de dados com Pandas, Plotly e outras ferramentas para extrair informações relevantes sobre a evolução do futebol ao longo do tempo.
+Este repositório contém os códigos e scripts desenvolvidos para análise de dados históricos de futebol em diversos torneios da FIFA, com foco em tendências de desempenho de times, jogadores, e eventos como pênaltis e gols. Utilizamos bibliotecas de ciência de dados em Python, como `pandas` e `plotly`, para explorar e visualizar diferentes aspectos dos dados.
 
-## Estrutura do Projeto
+## Descrição do Projeto
 
-### 1. Tendências Históricas de Partidas
-- **Evolução de Partidas ao Longo do Tempo:** Análise do número de jogos disputados por ano, observando o crescimento ao longo dos anos.
-![Total de jogos por ano](graphs/qtd_jogos_por_ano.png)
-- **Comparação de Gols ao Longo do Tempo:** Investigação da média de gols por jogo ao longo dos anos, comparando o futebol moderno com épocas passadas.
-![Media de gols por ano](graphs/media_gols_por_ano.png)
+A análise abrange uma variedade de temas e questões relacionadas ao desempenho de equipes e jogadores em torneios da FIFA, incluindo:
 
-### 2. Análise de Desempenho de Times
-- **Análise de Vitórias em Casa vs Fora:** Comparação da performance das equipes jogando em casa, fora e em locais neutros.
-![Total de tipo de vitoria](graphs/vitorias_casa_fora.png)
-- **Desempenho em Torneios vs Amistosos:** Comparação da performance das equipes em torneios como a Copa do Mundo versus jogos amistosos.
+1. **Desempenho de times em jogos dentro e fora de casa**  
+   Exploramos o impacto de jogar em casa, fora e em campo neutro nos resultados das partidas, demonstrando como o fator casa influencia o desfecho dos jogos.
 
-### 3. Análise de Gols
-- **Jogadores Mais Prolíficos:** Identificação dos jogadores que mais marcaram gols ao longo do tempo.
-![Principais Artilheiros](graphs/10_jogadores_mais_gol.png)
-- **Distribuição de Gols por Minuto:** Análise dos minutos em que as equipes tendem a marcar mais gols.
-![Gols por intervalo de tempo](graphs/distribuição_gols_por_minutos.png)
-- **Análise de Pênaltis e Gols Contra:** Frequência de pênaltis e gols contra ao longo dos anos.
-![Total de gols contras e penaltis ao longo dos anos](graphs/gols_contra_penaltis.png)
+2. **Top 10 times com mais vitórias na Copa do Mundo**  
+   Listagem dos 10 times que mais venceram partidas na história da Copa do Mundo da FIFA (não inclui qualificatórias).
 
-### Próximos Passos:
-Ainda faltam as análises dos seguintes itens:
-- **4. Análise de Pênaltis:** Foco em decisões por pênaltis e desempenho das seleções em cobranças.
-- **5. Análise Geográfica:** Investigação da distribuição das partidas por localidade e impacto do local neutro.
-- **6. Insights de Títulos e Torneios:** Estudo dos times mais vitoriosos por torneio e padrões de desempenho em diferentes competições.
+3. **Jogadores com mais gols em torneios da FIFA**  
+   Uma análise dos maiores artilheiros dos torneios da FIFA, liderados por grandes nomes como Cristiano Ronaldo, Robert Lewandowski, e Lionel Messi.
 
-## Ferramentas Utilizadas
-- **Python**
-  - Pandas para manipulação e análise de dados
-  - Plotly para visualizações interativas
-- **Visual Studio Code** para desenvolvimento e documentação
-- **GitHub** para controle de versão e compartilhamento do projeto
+4. **Distribuição de gols por minuto**  
+   Investigamos em quais intervalos de tempo os gols são mais frequentemente marcados, revelando padrões e momentos decisivos nas partidas.
 
-## Como Contribuir
-Este repositório será atualizado regularmente com novas análises e insights. Sinta-se à vontade para acompanhar o progresso, sugerir melhorias e contribuir com feedbacks.
+5. **Análise de pênaltis e gols contra**  
+   Um estudo detalhado sobre a evolução de pênaltis e gols contra ao longo dos anos, visualizado por meio de gráficos de linha.
 
-Link do dataset original: [Kaggle - Global Football Results Dataset](https://www.kaggle.com/martj42/international-football-results-from-1872-to-2017)
+6. **Estudo de decisões por pênaltis**  
+   Analisamos o desempenho de diferentes seleções em decisões por pênaltis, além de destacar o impacto da cobrança inicial nessas situações.
 
----
+## Estrutura do Repositório
+
+- `data/`: Contém os datasets utilizados nas análises.
+- `codes/`: Contém os códigos das análises.
+- `graphs/`: Gráficos gerados durante o processo de análise.
+- `README.md`: Este arquivo com a descrição do projeto.
+
+## Requisitos
+
+Para rodar os códigos deste repositório, você precisará das seguintes bibliotecas Python:
+
+- `pandas`
+- `plotly`
+
+## Contribuições
+
+Contribuições são bem-vindas! Se você quiser melhorar o código, adicionar novas análises, ou corrigir algo, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+## Licença
+
+Este projeto está licenciado sob os termos da licença MIT. Para mais informações, leia o arquivo [LICENSE](LICENSE).
+
+## Autor
+
+- **Pedro Paulo** - [LinkedIn](https://www.linkedin.com/in/ppaulopy/) | [GitHub](https://github.com/pedropaulo-d)
