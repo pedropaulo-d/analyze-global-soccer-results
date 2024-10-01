@@ -32,13 +32,14 @@ fig1 = px.bar(
                     'value': 'Número de Vitórias',
                     'variable': 'Tipo de Jogo',
                     'scorer': 'Jogadores',
-                    'date': 'N° de Gols'
-                    })
+                    'date': 'N° de Gols'},
+            text='date'
+            )
+
+fig1.update_traces(texttemplate='%{text}', textposition='outside')
 fig1.show()
 
-html_string = fig1.to_html(full_html=True, include_plotlyjs='cdn')
-with open("df_10Players_goals.html", "w") as f:
-    f.write(html_string)
+  
 # %%
 df_matches.head()
 # %%
@@ -65,9 +66,3 @@ fig2 = px.bar(
     labels={'gols': 'Quantidade de Gols', 'team': 'Time', 'scorer': 'Artilheiro'}
 )
 fig2.show()
-
-html_string = fig2.to_html(full_html=True, include_plotlyjs='cdn')
-with open("top10_scorers_by_team.html", "w") as f:
-    f.write(html_string)
-
-# %%

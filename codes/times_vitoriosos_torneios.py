@@ -55,8 +55,7 @@ fig.show()
 html_string = fig.to_html(full_html=True, include_plotlyjs='cdn')
 with open("10_times_mais_fortes", "w") as f:
     f.write(html_string)
-# %%
-
+    
 # %%
 condicao = df_matches['tournament'] == 'Copa América'
 df_matches_copaamerica = df_matches[condicao]

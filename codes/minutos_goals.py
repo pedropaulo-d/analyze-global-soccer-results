@@ -56,7 +56,3 @@ fig.update_traces(texttemplate='%{text:.2f}%', textposition='outside')
 # Exibindo o gráfico
 fig.show()
 # %%
-html_string = fig.to_html(full_html=True, include_plotlyjs='cdn')
-with open("distribuicaodegols.html", "w") as f:
-    f.write(html_string)
-# %%

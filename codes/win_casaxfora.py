@@ -43,6 +43,15 @@ fig = px.bar(
                     'variable': 'Tipo de Jogo',
                     'date': 'N° de Vitórias',
                     'tipo_vitoria': 'Tipo de Vitória'
-                    })
+                    },
+            text='date'
+            )
+
+fig.update_traces(texttemplate='%{text}', textposition='outside')
+
 fig.show()
+# %%
+html_string = fig.to_html(full_html=True, include_plotlyjs='cdn')
+with open("vitorias_em_casa_vs_fora.html", "w") as f:
+    f.write(html_string)
 # %%

@@ -63,10 +63,10 @@ fig = px.bar(
                     'variable': 'Tipo de Jogo',
                     'time_ganhador': 'Times',
                     'date': 'N° de Vitórias'
-                    })
+                    },
+            text='date'    
+                )
+
+fig.update_traces(texttemplate='%{text}', textposition='outside')
+
 fig.show()
-# %%
-html_string = fig.to_html(full_html=True, include_plotlyjs='cdn')
-with open("10_times_mais_fortes", "w") as f:
-    f.write(html_string)
-# %%

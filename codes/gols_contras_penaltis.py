@@ -80,8 +80,3 @@ fig = px.line(df_gols_penaltis_contra, x='date', y=['Gols de Penaltis', 'Gols Co
                   })
 fig.show()
 # %%
-
-html_string = fig.to_html(full_html=True, include_plotlyjs='cdn')
-with open("gols_contra_penaltis.html", "w") as f:
-    f.write(html_string)
-# %%
