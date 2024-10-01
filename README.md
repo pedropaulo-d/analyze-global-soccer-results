@@ -49,3 +49,5 @@ Este projeto está licenciado sob os termos da licença MIT. Para mais informaç
 ## Autor
 
 - **Pedro Paulo** - [LinkedIn](https://www.linkedin.com/in/ppaulopy/) | [GitHub](https://github.com/pedropaulo-d)
+
+- Documentei todas as minhas análises e insights [nesse](https://www.linkedin.com/pulse/an%25C3%25A1lise-explorat%25C3%25B3ria-de-dados-eda-jogos-futebol-pedro-paulo-ikpyf) artigo no LinkedIn. 
