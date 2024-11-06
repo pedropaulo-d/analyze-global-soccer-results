@@ -9,20 +9,32 @@ A análise abrange uma variedade de temas e questões relacionadas ao desempenho
 1. **Desempenho de times em jogos dentro e fora de casa**  
    Exploramos o impacto de jogar em casa, fora e em campo neutro nos resultados das partidas, demonstrando como o fator casa influencia o desfecho dos jogos.
 
+   ![Desempenho de times em jogos dentro e fora de casa](<graphs/Vitorias em casa VS Fora.png>)
+
 2. **Top 10 times com mais vitórias na Copa do Mundo**  
    Listagem dos 10 times que mais venceram partidas na história da Copa do Mundo da FIFA (não inclui qualificatórias).
+
+   ![Top 10 times com mais vitórias na Copa do Mundo](graphs/10_times_mais_fortes.png)
 
 3. **Jogadores com mais gols em torneios da FIFA**  
    Uma análise dos maiores artilheiros dos torneios da FIFA, liderados por grandes nomes como Cristiano Ronaldo, Robert Lewandowski, e Lionel Messi.
 
+   ![Jogadores com mais gols em torneios da FIFA](graphs/10_jogadores_mais_gol.png)
+
 4. **Distribuição de gols por minuto**  
    Investigamos em quais intervalos de tempo os gols são mais frequentemente marcados, revelando padrões e momentos decisivos nas partidas.
+
+   ![Distribuição de gols por minuto](graphs/distribuição_gols_por_minutos.png)
 
 5. **Análise de pênaltis e gols contra**  
    Um estudo detalhado sobre a evolução de pênaltis e gols contra ao longo dos anos, visualizado por meio de gráficos de linha.
 
+   ![Análise de pênaltis e gols contra](graphs/gols_contra_penaltis.png)
+
 6. **Estudo de decisões por pênaltis**  
    Analisamos o desempenho de diferentes seleções em decisões por pênaltis, além de destacar o impacto da cobrança inicial nessas situações.
+
+   ![Estudo de decisões por pênaltis](graphs/vitoria_penaltis_torneios.png)
 
 ## Estrutura do Repositório
 
